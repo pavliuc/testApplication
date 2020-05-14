@@ -1,0 +1,13 @@
+target 'TestApplication' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  pod 'ObjectMapper'
+  pod 'AlamofireObjectMapper'
+  pod 'Kingfisher'
+  pod 'NVActivityIndicatorView'
+  pod 'Alamofire'
+
+  # Pods for TestApplication
+
+end

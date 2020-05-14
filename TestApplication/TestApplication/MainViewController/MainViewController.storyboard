@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pab-7W-xwz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rick and Morty-->
+        <scene sceneID="u5D-qy-WRA">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="6H2-y8-Q4V" customClass="MainViewController" customModule="TestApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d19-DN-xs6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66m-jT-p80" customClass="CharactersView" customModule="TestApplication" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="160" width="414" height="736"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="66m-jT-p80" firstAttribute="leading" secondItem="QDn-ya-dvb" secondAttribute="leading" id="LLL-SP-MSD"/>
+                            <constraint firstAttribute="bottom" secondItem="66m-jT-p80" secondAttribute="bottom" id="fK6-00-0Je"/>
+                            <constraint firstItem="66m-jT-p80" firstAttribute="top" secondItem="QDn-ya-dvb" secondAttribute="top" constant="20" id="m3D-c1-6zP"/>
+                            <constraint firstItem="QDn-ya-dvb" firstAttribute="trailing" secondItem="66m-jT-p80" secondAttribute="trailing" id="qrh-Bi-m04"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QDn-ya-dvb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rick and Morty" id="HZe-0K-SZd"/>
+                    <connections>
+                        <outlet property="charactersView" destination="66m-jT-p80" id="kZ3-Oc-ciY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l57-Bz-TE4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786.95652173913049" y="37.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b81-t2-RdC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pab-7W-xwz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Rru-Di-KNW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6H2-y8-Q4V" kind="relationship" relationship="rootViewController" id="td1-9O-URs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vsz-85-9A5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123.18840579710145" y="37.5"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>
